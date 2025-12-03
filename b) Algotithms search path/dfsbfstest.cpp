@@ -1,4 +1,3 @@
-//Alexander Deco Meza Moreno
 #include <iostream>
 #include <vector>
 using namespace std;
