@@ -1,0 +1,68 @@
+Instrucciones para ejecutar el código C++
+
+Abre el archivo .cpp en el software de tu gusto, en nuestro caso fue probado en Online GDB por cuestiones prácticas y de compatibilidad.
+
+Utiliza el lenguaje "C++ 17"
+
+El programa te pedirá que ingreses:
+   - El número de nodos y aristas en el grafo.
+   - Las aristas del grafo en formato (nodo origen, nodo destino).
+
+El programa verificará si el grafo es un árbol. Un grafo es un árbol si tiene:
+   - Exactamente n-1 aristas, donde n es el número de nodos.
+   - El grafo debe ser conexo y no debe contener ciclos.
+
+
+
+A continuación mostramos algunas sugerencias de inputs que probamos para que se pueda probar el algoritmo.
+
+
+
+EjEMPLO 1
+
+Input:
+
+4
+3
+0 1
+1 2
+2 3
+
+Output esperado:
+
+El grafo es un árbol.
+
+
+
+EJEMPLO 2
+
+Input:
+
+4
+4
+0 1
+1 2
+2 3
+3 0
+
+Output esperado:
+
+El grafo no es un árbol.
+
+
+
+EJEMPLO 3
+
+Input:
+
+5
+5
+0 1
+1 2
+2 3
+3 4
+4 0
+
+Output esperado:
+
+El grafo no es un árbol.

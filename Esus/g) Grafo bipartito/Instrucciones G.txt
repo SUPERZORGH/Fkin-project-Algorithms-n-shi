@@ -1,0 +1,66 @@
+
+Instrucciones para ejecutar el código C++
+
+Abre el archivo .cpp en el software de tu gusto, en nuestro caso fue probado en Online GDB por cuestiones prácticas y de compatibilidad.
+
+Utiliza el lenguaje "C++ 17"
+
+El programa te pedirá que ingreses:
+   - El número de vértices y aristas en el grafo.
+   - Las aristas del grafo en formato (nodo1, nodo2).
+
+El programa verificará si el grafo es bipartito. Un grafo es bipartito si es posible dividir sus vértices en dos conjuntos disjuntos tales que no haya aristas entre vértices dentro del mismo conjunto.
+
+
+A continuación mostramos algunas sugerencias de inputs que probamos para que se pueda probar el algoritmo.
+
+
+
+EJEMPLO 1
+
+Input:
+
+4
+4
+1 2
+1 3
+2 4
+3 4
+
+Output esperado
+
+El grafo ES bipartito
+
+
+
+EJEMPLO 2
+
+Input:
+
+3
+3
+1 2
+2 3
+1 3
+
+Output esperado:
+
+El grafo NO es bipartito
+
+
+EJEMPLO 3
+
+Input:
+
+5
+6
+1 2
+1 3
+2 4
+2 5
+3 4
+4 5
+
+Output esperado:
+
+El grafo NO es bipartito
