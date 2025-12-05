@@ -1,9 +1,9 @@
-//Código de ejemplo para encontrar componentes conexas en un grafo representado por una matriz de adyacencia.
+//cÃ³digo de ejemplo para encontrar componentes conexas en un grafo representado por una matriz de adyacencia.
 #include <iostream>
 #include <vector>
 using namespace std;
 
-//Función para realizar DFS (Mismo que el código de DFS en dfsbfstest.cpp)
+//FunciÃ³n para realizar DFS (Mismo que el cÃ³digo de DFS en dfsbfstest.cpp)
 void DFS(int v, vector<vector<int>>& graph, vector<bool>& visited, vector<int>& component) {
     visited[v] = true; 
     component.push_back(v); 
@@ -14,9 +14,9 @@ void DFS(int v, vector<vector<int>>& graph, vector<bool>& visited, vector<int>& 
     }
 }
 
-//Función para encontrar y mostrar todos los componentes conexas en el grafo
+//FunciÃ³n para encontrar y mostrar todos los componentes conexas en el grafo
 void findConnectedComponents(vector<vector<int>>& graph) { 
-    int n = graph.size(); // Número de nodos
+    int n = graph.size(); // nÃºmero de nodos
     vector<bool> visited(n, false); // Vector para rastrear nodos visitados
     int componentNumber = 1; // Contador de componentes conexas
 
@@ -38,12 +38,12 @@ void findConnectedComponents(vector<vector<int>>& graph) {
 int main() {
     int n;
 
-    cout << "Ingrese el número de nodos: ";
+    cout << "Ingrese el nÃºmero de nodos: ";
     cin >> n;
 
     vector<vector<int>> graph(n, vector<int>(n)); // Matriz de adyacencia
 
-    cout << "Ingrese la matriz de adyacencia (1 para conexión, 0 para no conexión):\n";
+    cout << "Ingrese la matriz de adyacencia (1 para conexiÃ³n, 0 para no conexiÃ³n):\n";
 
     for (int i = 0; i < n; i++) { // Rellena la matriz de adyacencia
         for (int j = 0; j < n; j++) {
@@ -52,6 +52,5 @@ int main() {
     }
 
     findConnectedComponents(graph); // Encuentra y muestra los componentes conexas
-
-    return 0;
+    return 0;
 }
