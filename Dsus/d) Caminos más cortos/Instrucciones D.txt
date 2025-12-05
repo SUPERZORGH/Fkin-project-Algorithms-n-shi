@@ -1,0 +1,85 @@
+
+Instrucciones para ejecutar el código C++
+
+Abre el archivo .cpp en el software de tu gusto, en nuestro caso fue probado en Online GDB por cuestiones prácticas y de compatibilidad.
+
+Utiliza el lenguaje "C++ 17"
+
+El programa te pedirá que ingreses:
+   - El número de nodos y aristas en el grafo.
+   - Las aristas del grafo en formato (nodo origen, nodo destino, peso).
+   - El nodo de origen desde el cual calcular los caminos más cortos.
+
+El programa calculará el camino más corto desde el nodo de origen a todos los demás nodos utilizando el algoritmo de Dijkstra, mostrando las distancias más cortas y los caminos reconstruidos.
+
+
+A continuación mostramos algunas sugerencias de inputs que probamos para que se pueda probar el algoritmo.
+
+
+
+EJEMPLO 1
+
+Input:
+
+5
+7
+0 1 10
+0 2 5
+1 2 2
+1 3 1
+2 1 3
+2 3 9
+3 4 4
+0
+
+Output esperado:
+
+//Camino más corto: 
+Nodo 0: 0 (Camino: 0)
+Nodo 1: 8 (Camino: 0 -> 2 -> 1)
+Nodo 2: 5 (Camino: 0 -> 2)
+Nodo 3: 9 (Camino: 0 -> 2 -> 1 -> 3)
+Nodo 4: 13 (Camino: 0 -> 2 -> 1 -> 3 -> 4)
+
+
+
+EJEMPLO 2
+
+Input:
+
+4
+6
+0 1 4
+0 2 1
+1 2 2
+1 3 5
+2 3 1
+3 0 7
+0
+
+Output esperado:
+
+//Camino más corto:
+Nodo 0: 0 (Camino: 0)
+Nodo 1: 4 (Camino: 0 -> 1)
+Nodo 2: 1 (Camino: 0 -> 2)
+Nodo 3: 2 (Camino: 0 -> 2 -> 3)
+
+
+EJEMPLO 3
+
+Input:
+
+3
+3
+0 1 2
+1 2 3
+0 2 4
+0
+
+Output esperado:
+
+//Camino más corto:
+Nodo 0: 0 (Camino: 0)
+Nodo 1: 2 (Camino: 0 -> 1)
+Nodo 2: 4 (Camino: 0 -> 2)

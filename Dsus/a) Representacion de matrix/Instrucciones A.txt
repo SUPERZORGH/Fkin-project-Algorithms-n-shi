@@ -1,0 +1,85 @@
+Instrucciones para ejecutar el código C++
+
+Abre el archivo .cpp en el software de tu gusto, en nuestro caso fue probado en Online GDB por cuestiones prácticas y de compatibilidad.
+
+Utiliza el lenguaje "C++ 17" 
+
+El programa te pedirá que elijas una opción:
+   - Si eliges 1: Se ingresará y visualizará una matriz de adyacencia y luego se convertirá a una lista de adyacencia.
+   - Si eliges 2: Se ingresará y visualizará una lista de adyacencia y luego se convertirá a una matriz de adyacencia.
+
+
+A continuación mostramos algunas sugerencias de inputs que probamos para que se pueda probar el algoritmo.
+
+EJEMPLO 1
+
+Input:
+
+1
+3
+0 1 0
+1 0 1
+0 1 0
+
+
+Output esperado:
+
+//Matriz de adyacencia ingresada:
+0 1 0 
+1 0 1 
+0 1 0 
+
+//Lista de adyacencia generada:
+Nodo 0: 1
+Nodo 1: 0 2
+Nodo 2: 1
+
+
+EJEMPLO 2
+
+Input:
+
+2
+4
+1 3 -1
+0 2 -1
+1 3 -1
+0 2 -1
+
+
+Output esperado:
+
+//Lista de adyacencia ingresada:
+Nodo 0: 1 3
+Nodo 1: 0 2
+Nodo 2: 1 3
+Nodo 3: 0 2
+
+//Matriz de adyacencia generada:
+0 1 0 1
+1 0 1 0
+0 1 0 1
+1 0 1 0
+
+
+
+
+EJEMPLO 3
+
+Input:
+
+1
+2
+0 1
+1 0
+
+Output esperado:
+
+//Matriz de adyacencia ingresada:
+0 1
+1 0
+
+//Lista de adyacencia generada:
+Nodo 0: 1
+Nodo 1: 0
+

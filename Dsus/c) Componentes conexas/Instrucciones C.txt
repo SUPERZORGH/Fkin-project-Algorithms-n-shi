@@ -1,0 +1,67 @@
+Instrucciones para ejecutar el código C++
+
+Abre el archivo .cpp en el software de tu gusto, en nuestro caso fue probado en Online GDB por cuestiones prácticas y de compatibilidad.
+
+Utiliza el lenguaje "C++ 17"
+
+El programa te pedirá que ingreses:
+   - El número de nodos del grafo.
+   - La matriz de adyacencia, donde se ingresan 1 para indicar conexión entre nodos y 0 para indicar no conexión.
+
+El programa encontrará y mostrará todos los componentes conexos del grafo representado por la matriz de adyacencia.
+
+
+
+A continuación mostramos algunas sugerencias de inputs que probamos para que se pueda probar el algoritmo.
+
+
+
+EJEMPLO 1
+
+Input:
+
+4
+0 1 0 1
+1 0 1 0
+0 1 0 1
+1 0 1 0
+
+Output esperado:
+
+//Componente conexo 1: A B C D
+
+
+
+EJEMPLO 2
+
+Input:
+
+5
+0 1 0 0 0
+1 0 1 0 0
+0 1 0 1 0
+0 0 1 0 1
+0 0 0 1 0
+
+Output esperado:
+
+//Componente conexo 1: A B C D E
+
+
+
+EJEMPLO 3
+
+Input:
+
+6
+0 1 0 0 0 0
+1 0 0 0 0 0
+0 0 0 1 0 0
+0 0 1 0 1 0
+0 0 0 1 0 1
+0 0 0 0 1 0
+
+Output esperado:
+
+//Componente conexo 1: A B
+//Componente conexo 2: C D E F
